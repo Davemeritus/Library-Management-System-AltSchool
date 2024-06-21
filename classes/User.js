@@ -11,7 +11,7 @@ class User {
   // methods
   pickBook(isbn, library) {
     try {
-      if (this.borrowedBooks < 3) {
+      if (this.borrowedBooks.length < 3) {
         const bookIndex = library.books.findIndex((book) => book.isbn === isbn);
         if (bookIndex !== -1) {
   

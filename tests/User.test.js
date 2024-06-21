@@ -55,7 +55,7 @@ describe("User class", () => {
 
     // Expect the borrowedBooks length to still be 3
     expect(newUser.borrowedBooks.length).toBe(3);
-    expect(newLibrary.books.length).toBe(0);
+    expect(newLibrary.books.length).toBe(1);
   });
 
   it("should not pick a book (book does not exist)", () => {
